@@ -1,8 +1,8 @@
 
-name: 'goods_delivery_logistics_analysis'
+name: 'SaaS_Subscription_and_Churn_Analytics'
 version: '1.0.0'
 
-profile: 'goods_delivery_logistics_analysis'
+profile: 'SaaS_Subscription_and_Churn_Analytics'
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]
@@ -16,5 +16,5 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  goods_delivery_logistics_analysis:
+  SaaS_Subscription_and_Churn_Analytics:
     +materialized: table
