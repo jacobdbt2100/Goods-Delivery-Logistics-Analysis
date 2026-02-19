@@ -1,12 +1,18 @@
 version: 2
 
 sources:
-  - name: goods_delivery_data
-    description: "Raw goods delivery data from the company's transactional system"
-    database: goods_delivery_source_catalog
-    schema: goods_delivery_source_schema
+  - name: SaaS_Analytics
+    description: "Simulated data for SaaS user behavior analysis"
+    database: saas_subscription_and_churn_analytics_dev
+    schema: source_schema_saas_dev
     tables:
-      - name: goods_delivery                  # Name to refer to in this project
-        identifier: goods_delivery_source_tbl # Table name in the source schema
-        description: "Customer orders being fulfilled in August & September 2025"
-      
+      - name: accounts
+        description: "customer metadata"
+      - name: churn_events
+        description: "churn dates, reasons, and refund behaviors"
+      - name: feature_usage
+        description: "daily product interaction logs"
+      - name: subscriptions
+        description: "subscription lifecycles and revenue"
+      - name: support_tickets
+        description: "support activity and satisfaction scores"

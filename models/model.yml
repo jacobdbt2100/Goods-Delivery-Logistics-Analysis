@@ -1,8 +1,8 @@
 version: 2
 
 models:
-  - name: bronze_goods_delivery
-    description: "goods_delivery_data renamed columns"
+  - name: dim_customers
+    description: "customer metadata"
    
     config:
-      materialized: table              # Can also be 'table', 'incremental', etc.
+      materialized: table              # Can also be 'view', 'incremental', etc.
