@@ -1,4 +1,4 @@
-select 
+SELECT
   account_id,
   account_name,
   industry,
@@ -9,5 +9,5 @@ select
   seats,
   is_trial,
   churn_flag,
-  current_timestamp as ingested_at
-from {{ source('SaaS_Analytics', 'accounts') }}
+  current_timestamp AS ingested_at
+FROM {{ source('SaaS_Analytics', 'accounts') }}
