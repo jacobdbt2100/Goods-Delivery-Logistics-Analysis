@@ -1,5 +1,5 @@
 SELECT
-  usage_id, -- has duplicates
+  usage_id,
   subscription_id,
   usage_date,
   feature_name,

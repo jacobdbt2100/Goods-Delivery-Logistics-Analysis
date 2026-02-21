@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: dim_customers
+  - name: bronze_customers
     description: "customer metadata"
    
     config:
