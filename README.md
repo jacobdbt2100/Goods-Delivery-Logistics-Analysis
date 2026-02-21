@@ -9,3 +9,5 @@ ___
 
 **Skills:** `SQL Modelling` `Data Test & Validation` `Documentation` `Continuous Integration & Deployment (CI/CD)` `Power BI Data Modelling` `DAX` `Data Visualization`
 
+Since `usage_id` was duplicated and had no foreign key dependencies, a surrogate primary key was introduced to enforce event-level uniqueness and preserve modelling integrity.
+
