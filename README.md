@@ -5,9 +5,21 @@ ___
 
 <img src="https://raw.githubusercontent.com/jacobdbt2100/SaaS-Subscription-and-Churn-Analytics/main/dbt_postgresql_elt.jpg" width="800">
 
-**Tools:** `dbt` `PostgreSQL` `Git/GitHub` `Power BI`
+## Executive Summary:
 
-**Skills:** `SQL Modelling` `Data Test & Validation` `Documentation` `Continuous Integration & Deployment (CI/CD)` `Power BI Data Modelling` `DAX` `Data Visualization`
 
+## Business Problem:
+
+
+## Methodology:
 Since `usage_id` was duplicated and had no foreign key dependencies, a surrogate primary key was introduced to enforce event-level uniqueness and preserve modelling integrity.
 
+## Skills:
+`SQL Modelling` `Data Test & Validation` `Documentation` `Continuous Integration & Deployment (CI/CD)` `Power BI Data Modelling` `DAX` `Data Visualization`
+
+## Tools:
+`dbt` `PostgreSQL` `Git/GitHub` `Power BI`
+
+## Insights & Recommendation:
+
+___
