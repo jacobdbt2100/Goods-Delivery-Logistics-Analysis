@@ -9,4 +9,4 @@ SELECT
   is_reactivation,
   feedback_text,
   current_timestamp AS ingested_at
-FROM {{ source('SaaS_Analytics', 'churn_events') }}
+FROM {{ ref('bronze_churn_events') }}
