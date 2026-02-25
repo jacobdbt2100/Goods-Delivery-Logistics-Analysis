@@ -28,5 +28,5 @@ SELECT
 FROM trial_subs t
 LEFT JOIN paid_after_trial p
   ON t.account_id = p.account_id
-GROUP BY month_start
-ORDER BY month_start
+GROUP BY 1
+ORDER BY 1
