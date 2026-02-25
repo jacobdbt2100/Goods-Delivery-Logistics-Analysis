@@ -1,3 +1,4 @@
+-- mrr_trends
 WITH months AS (
     SELECT DATE_TRUNC('month', month_date)::date AS month_start
     FROM generate_series('2023-01-01'::date, CURRENT_DATE, interval '1 month') month_date
