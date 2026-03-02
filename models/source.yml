@@ -3,8 +3,8 @@ version: 2
 sources:
   - name: SaaS_Analytics
     description: "Simulated data for SaaS user behavior analysis"
-    database: saas_subscription_and_churn_analytics_dev
-    schema: source_schema_saas_dev
+    database: '{{target.dbname}}'
+    schema: "{{ 'source_schema_saas_' ~ target.name }}"
     tables:
       - name: accounts
         description: "customer metadata"
