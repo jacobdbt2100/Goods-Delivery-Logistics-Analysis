@@ -24,7 +24,7 @@ Build a clean, testable, and scalable data model that supports executive-level r
 
 ## Methodology:
 
-1. Data Modelling (ELT Approach)
+### 1. Data Modelling (ELT Approach)
 
 Raw SaaS tables: accounts, subscriptions, invoices, payments, support tickets
 
@@ -70,13 +70,13 @@ DAX measures for dynamic KPIs
 
 Since `usage_id` was duplicated and had no foreign key dependencies, a surrogate primary key was introduced to enforce event-level uniqueness and preserve modelling integrity.
 
-## Skills:
-`SQL Modelling` `Data Test & Validation` `Documentation` `Continuous Integration & Deployment (CI/CD)` `Power BI Data Modelling` `DAX` `Data Visualization`
-
-## Tools:
-`dbt` `PostgreSQL` `Git/GitHub` `Power BI`
-
 ## Insights & Recommendations:
 
 <img src="https://raw.githubusercontent.com/jacobdbt2100/SaaS-Subscription-and-Churn-Analytics/main/SaaS subscription and churn analysis.jpg" width="800">
+
+### Skills:
+`SQL Modelling` `Data Test & Validation` `Documentation` `Continuous Integration & Deployment (CI/CD)` `Power BI Data Modelling` `DAX` `Data Visualization`
+
+### Tools:
+`dbt` `PostgreSQL` `Git/GitHub` `Power BI`
 ___
