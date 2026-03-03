@@ -24,7 +24,7 @@ Build a clean, testable, and scalable data model that supports executive-level r
 
 ## Methodology:
 
-### 1. Data Modelling (ELT Approach)
+1. Data Modelling (ELT Approach)
 
 Raw SaaS tables: accounts, subscriptions, invoices, payments, support tickets
 
