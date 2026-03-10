@@ -1,7 +1,7 @@
 ## End-to-End Analytics Engineering Project:
 ___
 
-# Building an ELT Pipeline for SaaS Subscription Pattern and User Retention Analytics
+# Building an ELT Pipeline for SaaS Subscriber Growth and Retention
 
 <img src="https://raw.githubusercontent.com/jacobdbt2100/SaaS-Subscription-and-Churn-Analytics/main/dbt_postgresql_elt.jpg" width="800">
 
