@@ -10,8 +10,6 @@ SELECT
   is_trial,
   upgrade_flag,
   downgrade_flag,
-  churn_flag,
   billing_frequency,
-  auto_renew_flag,
-  current_timestamp AS ingested_at
-FROM {{ source('SaaS_Analytics', 'subscriptions') }}
+  auto_renew_flag
+FROM {{ ref('stg_subscriptions') }}

@@ -7,6 +7,5 @@ SELECT
   priority,
   first_response_time_minutes,
   satisfaction_score,
-  escalation_flag,
-  current_timestamp AS ingested_at
-FROM {{ source('SaaS_Analytics', 'support_tickets') }}
+  escalation_flag
+FROM {{ ref('stg_support_tickets') }}

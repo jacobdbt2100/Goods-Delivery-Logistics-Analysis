@@ -21,14 +21,14 @@ models:
     # Staging / Bronze layer defaults
     bronze:
       +materialized: table
-      +schema: bronze
+      +schema: staging
 
     # Intermediate / Silver layer defaults
     silver:
       +materialized: view
-      +schema: silver
+      +schema: intermediate
 
     # Mart / Gold layer defaults
     gold:
       +materialized: table
-      +schema: gold
+      +schema: mart

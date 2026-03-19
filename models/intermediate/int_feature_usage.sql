@@ -7,7 +7,5 @@ SELECT
   feature_name,
   usage_count,
   usage_duration_secs,
-  error_count,
-  is_beta_feature,
-  current_timestamp AS ingested_at
-FROM {{ ref('bronze_feature_usage') }}
+  error_count
+FROM {{ ref('stg_feature_usage') }}

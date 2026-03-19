@@ -1,4 +1,4 @@
--- features_adoption_rate
+-- paid_subs_engagement_rate
 WITH monthly_usage AS (
     SELECT
         DATE_TRUNC('month', usage_date)::date AS month_start,
@@ -24,11 +24,11 @@ active_subs AS (
 SELECT
     a.month_start,
     COUNT(DISTINCT a.subscription_id) AS active_paid_subscriptions,
-    COUNT(DISTINCT u.subscription_id) AS subscriptions_with_usage,
+    COUNT(DISTINCT u.subscription_id) AS subscriptions_with_engagement,
     ROUND(
         100.0 * COUNT(DISTINCT u.subscription_id) / NULLIF(COUNT(DISTINCT a.subscription_id), 0),
         2
-    ) AS adoption_rate_pct
+    ) AS engagement_rate_pct
 FROM active_subs a
 LEFT JOIN monthly_usage u
   ON a.month_start = u.month_start

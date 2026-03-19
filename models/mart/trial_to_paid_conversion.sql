@@ -14,12 +14,11 @@ paid_after_trial AS (
     FROM {{ ref('fct_subscriptions') }} s
     JOIN trial_subs t
       ON s.account_id = t.account_id
-     AND s.is_trial = FALSE --# "where s.is_trial = FALSE" also works
+     AND s.is_trial = FALSE
      AND s.start_date > t.trial_start_date
     GROUP BY s.account_id
 )
 SELECT
-	DATE_TRUNC('month', t.trial_start_date)::date AS month_start,
     COUNT(t.account_id) AS trial_signups,
     COUNT(p.account_id) AS trial_converted,
     ROUND(
@@ -28,5 +27,3 @@ SELECT
 FROM trial_subs t
 LEFT JOIN paid_after_trial p
   ON t.account_id = p.account_id
-GROUP BY 1
-ORDER BY 1
